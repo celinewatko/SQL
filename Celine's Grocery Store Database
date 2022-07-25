@@ -1,0 +1,22 @@
+create table grocery_store (id integer primary key, category TEXT, item TEXT, price INTEGER, popularity INTEGER);
+INSERT INTO grocery_store VALUES (1, "fruit", "mango", 1.99, 50);
+INSERT INTO grocery_store VALUES (2, "fruit", "kiwi", 2.99, 37);
+INSERT INTO grocery_store VALUES (3, "fruit", "raspberries", 3.99, 65);
+INSERT INTO grocery_store VALUES (4, "fruit", "strawberries", 2.59, 85);
+INSERT INTO grocery_store VALUES (5, "fruit", "blueberries", 1.59, 80);
+INSERT INTO grocery_store VALUES (6, "vegetables", "tomatoes", 2.00, 75);
+INSERT INTO grocery_store VALUES (7, "vegetables", "spinach", 2.50, 80);
+INSERT INTO grocery_store VALUES (8, "vegetables", "kale", 4.99, 65);
+INSERT INTO grocery_store VALUES (9, "vegetables", "lettuce", 3.00, 90);
+INSERT INTO grocery_store VALUES (10, "vegetables", "peppers", 1.00, 65);
+INSERT INTO grocery_store VALUES (11, "snacks", "pretzels", 4.29, 76);
+INSERT INTO grocery_store VALUES (12, "snacks", "crackers", 4.59, 37);
+INSERT INTO grocery_store VALUES (13, "snacks", "popsicles", 5.99, 53);
+INSERT INTO grocery_store VALUES (14, "snacks", "ice cream", 4.25, 98);
+INSERT INTO grocery_store VALUES (15, "snacks", "cookies", 6.99, 68);
+
+SELECT * FROM grocery_store;
+
+SELECT * FROM grocery_store GROUP BY price;
+
+SELECT * FROM grocery_store GROUP BY popularity;
